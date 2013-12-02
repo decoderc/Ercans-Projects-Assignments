@@ -1,4 +1,4 @@
-def create_decision_tree(data, attributes, target_attr, fitness_func):
+def decision_tree(data, attributes, target_attr, fitness_func):
     
     data    = data[:]
     vals    = [record[target_attr] for record in data]
