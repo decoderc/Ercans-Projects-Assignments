@@ -21,8 +21,7 @@ def create_decision_tree(data, attributes, target_attr, fitness_func):
         best = choose_attribute(data, attributes, target_attr,
                                 fitness_func)
 
-        # Create a new decision tree/node with the best attribute and an empty
-        # dictionary object--we'll fill that up next.
+        #En iyi özellik ve boş bir sözlük ile yeni bir ağaç oluştur.
         tree = {best:{}}
 		
 
@@ -38,7 +37,7 @@ def create_decision_tree(data, attributes, target_attr, fitness_func):
                 target_attr,
                 fitness_func)
 
-            # Yeni ağacımıza boş sözlük nesneleri için bir alt ağaç ekle.
+            #Yeni ağacımıza boş sözlük nesneleri için bir alt ağaç ekle.
 			
             tree[best][val] = subtree
 
